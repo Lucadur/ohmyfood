@@ -1,0 +1,390 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menucontent__card:nth-child(1) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.menucontent__card:nth-child(2) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.menucontent__card:nth-child(3) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.menucontent__card:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: unset;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.footer i {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.search-description__button {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border-radius: 30px;
+  border: unset;
+  color: #ffffff;
+  padding: 1rem 1.25rem;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+}
+.search-description__button:hover {
+  opacity: 80%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.buttoncontainer {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border-radius: 30px;
+  border: unset;
+  color: #ffffff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.btn:hover {
+  opacity: 80%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menucontent__card:nth-child(1) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.menucontent__card:nth-child(2) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.menucontent__card:nth-child(3) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.menucontent__card:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.loader {
+  position: fixed;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  opacity: 0.9;
+  height: 100%;
+  inset: 0;
+  z-index: 2;
+  -webkit-animation: disappear 500ms 2s forwards;
+          animation: disappear 500ms 2s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-top: 4px solid #9356DC;
+  border-bottom: 4px solid #99E2D0;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+.hearts {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.hearts .fa-regular {
+  position: relative;
+  left: 55%;
+}
+.hearts .fa-solid {
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.hearts:hover .fa-solid {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.hearts:hover .fa-regular {
+  display: none;
+}
+
+.headermenu {
+  width: 90%;
+  height: 82px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.headermenu .headermenu__title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headermenu i {
+  font-size: 24px;
+  width: 7%;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.headerimage {
+  width: 100%;
+  height: 50%;
+}
+.headerimage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.containermenu {
+  margin-top: -30px;
+  border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+.containermenu .menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0 15px;
+}
+.containermenu .menu__title h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+}
+.containermenu .menu__title i {
+  font-size: 24px;
+}
+.containermenu .menubloc .menucontent {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.containermenu .menubloc .menucontent .menucontent__title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
+  height: 25px;
+}
+.containermenu .menubloc .menucontent .menucontent__title h4 {
+  font-weight: 300;
+}
+.containermenu .menubloc .menucontent .menucontent__cards {
+  display: flex;
+  flex-direction: column;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__description {
+  padding: 10px;
+  overflow: hidden;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__title {
+  font-weight: 700;
+  line-height: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__text {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__price {
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #99E2D0;
+  height: 85px;
+  margin-right: -3rem;
+  width: 3rem;
+  transition: margin-right 0.5s;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__check i {
+  color: white;
+  font-size: 25px;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card:hover .menucontent__card__check {
+  margin-right: 0;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card:hover i {
+  -webkit-animation: quarterspin 0.5s ease-in-out;
+          animation: quarterspin 0.5s ease-in-out;
+}/*# sourceMappingURL=restaurants.css.map */

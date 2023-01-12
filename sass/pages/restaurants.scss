@@ -1,0 +1,166 @@
+@import "../base/base.scss";
+@import "../utils/variables.scss";
+@import "../utils/animations.scss";
+@import "../layout/footer.scss";
+@import "../components/buttons.scss";
+@import "../components/loader.scss";
+@import "../components/hearts.scss";
+
+.headermenu {
+    width: 90%;
+    height: 82px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+    .headermenu__title {
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    i {
+        font-size: 24px;
+        width: 7%;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.headerimage {
+    width: 100%;
+    height: 50%;
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+    }
+}
+
+
+.containermenu {
+    margin-top: -30px;
+    border-radius: 30px 30px 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+
+    .menu__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px 0 15px;
+
+        h2 {
+            font-family: 'Shrikhand', sans-serif;
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+
+    .menubloc {
+
+        .menucontent {
+            margin-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+
+
+            .menucontent__title {
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                border-bottom: 3px solid #99E2D0;
+                width: 45px;
+                height: 25px;
+
+                h4 {
+                    font-weight: 300;
+                }
+
+            }
+
+            .menucontent__cards {
+                display: flex;
+                flex-direction: column;
+
+
+                .menucontent__card {
+
+                    display: flex;
+                    align-items: center;
+                    background-color: white;
+                    border-radius: 20px;
+                    box-shadow: 0px 3px 13px 0px rgb(0 0 0 / 20%);
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    animation: appear 2s;
+
+                    .menucontent__card__description {
+                        padding: 10px;
+                        overflow: hidden;
+                    }
+
+                    .menucontent__card__title {
+                        font-weight: 700;
+                        line-height: 0px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    .menucontent__card__text {
+                        font-size: 14px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    .menucontent__card__price {
+                        margin-left: auto;
+                        padding-top: 15px;
+                        padding-right: 15px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+
+                    .menucontent__card__check {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
+                        background-color: #99E2D0;
+                        height: 85px;
+                        margin-right: -3rem;
+                        width: 3rem;
+                        transition: margin-right 0.5s;
+
+                        i {
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+
+                    &:hover {
+                        .menucontent__card__check {
+                            margin-right: 0;
+                        }
+
+                        i {
+                            animation: quarterspin 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
