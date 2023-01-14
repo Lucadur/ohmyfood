@@ -39,6 +39,11 @@
     img {
         object-fit: cover;
         max-width: 100%;
+
+        @media (min-width:1024px) {
+            height: 500px;
+            width: inherit;
+        }
     }
 }
 
@@ -68,11 +73,21 @@
 
 
     .menubloc {
+        @media (min-width:1024px) {
+            display: flex;
+            justify-content: center;
+        }
 
         .menucontent {
             margin-bottom: 30px;
             margin-left: 15px;
             margin-right: 15px;
+
+            @media (min-width:1024px) {
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 30%;
+            }
 
 
             .menucontent__title {
@@ -84,6 +99,10 @@
 
                 h4 {
                     font-weight: 300;
+                }
+
+                @media (min-width:1024px) {
+                    margin-left: 5px;
                 }
 
             }
@@ -105,15 +124,17 @@
                     animation: appear 2s;
 
                     .menucontent__card__description {
-                        padding: 10px;
+                        padding-left: 10px;
                         overflow: hidden;
+                        text-overflow: ellipsis;
                     }
 
                     .menucontent__card__title {
                         font-weight: 700;
-                        line-height: 0px;
+                        overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
+                        margin: 0;
                     }
 
                     .menucontent__card__text {
@@ -121,6 +142,7 @@
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
+                        margin: 0;
                     }
 
                     .menucontent__card__price {
@@ -137,7 +159,7 @@
                         justify-content: center;
                         flex-shrink: 0;
                         background-color: #99E2D0;
-                        height: 85px;
+                        height: 75px;
                         margin-right: -3rem;
                         width: 3rem;
                         transition: margin-right 0.5s;

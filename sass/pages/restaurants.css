@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -97,12 +96,24 @@ body {
   flex-direction: column;
   padding-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .footer h4 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
   margin-left: 20px;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .footer h4 {
+    font-size: 25px;
+  }
 }
 
 .footer a {
@@ -292,6 +303,12 @@ body {
      object-fit: cover;
   max-width: 100%;
 }
+@media (min-width: 1024px) {
+  .headerimage img {
+    height: 500px;
+    width: inherit;
+  }
+}
 
 .containermenu {
   margin-top: -30px;
@@ -313,10 +330,23 @@ body {
 .containermenu .menu__title i {
   font-size: 24px;
 }
+@media (min-width: 1024px) {
+  .containermenu .menubloc {
+    display: flex;
+    justify-content: center;
+  }
+}
 .containermenu .menubloc .menucontent {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
+}
+@media (min-width: 1024px) {
+  .containermenu .menubloc .menucontent {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+  }
 }
 .containermenu .menubloc .menucontent .menucontent__title {
   text-transform: uppercase;
@@ -327,6 +357,11 @@ body {
 }
 .containermenu .menubloc .menucontent .menucontent__title h4 {
   font-weight: 300;
+}
+@media (min-width: 1024px) {
+  .containermenu .menubloc .menucontent .menucontent__title {
+    margin-left: 5px;
+  }
 }
 .containermenu .menubloc .menucontent .menucontent__cards {
   display: flex;
@@ -344,20 +379,23 @@ body {
           animation: appear 2s;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__description {
-  padding: 10px;
+  padding-left: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__title {
   font-weight: 700;
-  line-height: 0px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__text {
   font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__price {
   margin-left: auto;
@@ -372,7 +410,7 @@ body {
   justify-content: center;
   flex-shrink: 0;
   background-color: #99E2D0;
-  height: 85px;
+  height: 75px;
   margin-right: -3rem;
   width: 3rem;
   transition: margin-right 0.5s;

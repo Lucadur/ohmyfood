@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -98,12 +97,24 @@ body {
   flex-direction: column;
   padding-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .footer h4 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
   margin-left: 20px;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .footer h4 {
+    font-size: 25px;
+  }
 }
 
 .footer a {
@@ -328,6 +339,11 @@ header .location-container input {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  .operation .operation__cards {
+    flex-direction: unset;
+  }
+}
 .operation .operation__card {
   display: flex;
   justify-content: center;
@@ -338,6 +354,11 @@ header .location-container input {
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) {
+  .operation .operation__card {
+    margin: 20px;
+  }
 }
 .operation .operation__card:hover {
   background-color: #e4dbf0;
@@ -358,6 +379,18 @@ header .location-container input {
   border-radius: 50px;
   color: white;
   font-size: 10px;
+}
+@media (min-width: 1024px) {
+  .operation .operation__card .operation__card__number {
+    position: unset;
+    margin-left: -40px;
+    margin-right: 30px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
 }
 .operation .operation__card i {
   opacity: 50%;
@@ -382,6 +415,11 @@ header .location-container input {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  .restaurants .restaurants__cards {
+    flex-direction: row;
+  }
+}
 .restaurants .restaurant__card {
   width: 100%;
   display: flex;
@@ -393,9 +431,20 @@ header .location-container input {
   text-decoration: none;
   color: black;
 }
+@media (min-width: 1024px) {
+  .restaurants .restaurant__card {
+    margin: 10px;
+  }
+}
 .restaurants .restaurant__card__top {
   height: 200px;
   width: 90%;
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurant__card__top {
+    height: 180px;
+    width: 100%;
+  }
 }
 .restaurants .restaurant__card__top img {
   -o-object-fit: cover;
@@ -405,6 +454,11 @@ header .location-container input {
   width: 100%;
   height: 200px;
   border-radius: 15px 15px 0 0;
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurant__card__top img {
+    height: 180px;
+  }
 }
 .restaurants .restaurant__card__button {
   position: absolute;
@@ -420,6 +474,12 @@ header .location-container input {
   text-align: center;
   padding-top: 5px;
 }
+@media (min-width: 1024px) {
+  .restaurants .restaurant__card__button {
+    margin-left: -100px;
+    right: auto;
+  }
+}
 .restaurants .restaurant__card__bottom {
   width: 90%;
   height: 75px;
@@ -430,6 +490,12 @@ header .location-container input {
   align-items: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 1024px) {
+  .restaurants .restaurant__card__bottom {
+    width: 100%;
+    height: 65px;
+  }
+}
 .restaurants .restaurant__card__text {
   margin-left: 10px;
 }
@@ -439,7 +505,6 @@ header .location-container input {
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -501,12 +566,24 @@ body {
   flex-direction: column;
   padding-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .footer h4 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
   margin-left: 20px;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .footer h4 {
+    font-size: 25px;
+  }
 }
 
 .footer a {
@@ -696,6 +773,12 @@ body {
      object-fit: cover;
   max-width: 100%;
 }
+@media (min-width: 1024px) {
+  .headerimage img {
+    height: 500px;
+    width: inherit;
+  }
+}
 
 .containermenu {
   margin-top: -30px;
@@ -717,10 +800,23 @@ body {
 .containermenu .menu__title i {
   font-size: 24px;
 }
+@media (min-width: 1024px) {
+  .containermenu .menubloc {
+    display: flex;
+    justify-content: center;
+  }
+}
 .containermenu .menubloc .menucontent {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
+}
+@media (min-width: 1024px) {
+  .containermenu .menubloc .menucontent {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+  }
 }
 .containermenu .menubloc .menucontent .menucontent__title {
   text-transform: uppercase;
@@ -731,6 +827,11 @@ body {
 }
 .containermenu .menubloc .menucontent .menucontent__title h4 {
   font-weight: 300;
+}
+@media (min-width: 1024px) {
+  .containermenu .menubloc .menucontent .menucontent__title {
+    margin-left: 5px;
+  }
 }
 .containermenu .menubloc .menucontent .menucontent__cards {
   display: flex;
@@ -748,20 +849,23 @@ body {
           animation: appear 2s;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__description {
-  padding: 10px;
+  padding-left: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__title {
   font-weight: 700;
-  line-height: 0px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__text {
   font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__price {
   margin-left: auto;
@@ -776,7 +880,7 @@ body {
   justify-content: center;
   flex-shrink: 0;
   background-color: #99E2D0;
-  height: 85px;
+  height: 75px;
   margin-right: -3rem;
   width: 3rem;
   transition: margin-right 0.5s;
@@ -795,7 +899,6 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -857,12 +960,24 @@ body {
   flex-direction: column;
   padding-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .footer h4 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
   margin-left: 20px;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .footer h4 {
+    font-size: 25px;
+  }
 }
 
 .footer a {
