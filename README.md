@@ -2,7 +2,9 @@
 
 Troisième projet du parcours "Développeur Javascript-React" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
-Vous pouvez retrouver [le brief complet ici]([http://www.dropwizard.io/1.0.2/docs/](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf))
+Vous pouvez retrouver [le brief complet ici](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf)
+
+![Accueil](https://user-images.githubusercontent.com/104781650/212650137-0ef830fc-7afd-45e4-9b5b-8a9a483a41aa.png)
 
 ## Objectifs
 
@@ -57,4 +59,4 @@ Vous pouvez retrouver [le brief complet ici]([http://www.dropwizard.io/1.0.2/doc
 * Maquette desktop : à improviser
 * Validation W3C HTML
 * Validation W3C CSS 
-Compatibilité : Dernières versions de Chrome, Firefox & Safari
+Compatibilité 
