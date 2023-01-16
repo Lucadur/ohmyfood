@@ -58,5 +58,4 @@ Vous pouvez retrouver [le brief complet ici](https://s3.eu-west-1.amazonaws.com/
 * Maquette mobile : oui
 * Maquette desktop : à improviser
 * Validation W3C HTML
-* Validation W3C CSS 
-Compatibilité 
+* [Validation W3C CSS](http://jigsaw.w3.org/css-validator/validator?lang=fr&profile=css3svg&uri=https%3A%2F%2Flucadur.github.io%2Fohmyfood%2F&usermedium=all&vextwarning=&warning=1)
