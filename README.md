@@ -1,6 +1,6 @@
 # ohmyfood
 
-Troisième projet du parcours "Développeur Javascript-React" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
+Troisième projet du parcours "Développeur Javascript-React" chez OpenClassroom. L'objectif est d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
 Vous pouvez retrouver [le brief complet ici](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf)
 
