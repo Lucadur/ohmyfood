@@ -111,8 +111,13 @@
                 display: flex;
                 flex-direction: column;
 
-
                 .menucontent__card {
+
+                    @for $i from 1 through 4 {
+                        &:nth-child(#{$i}) {
+                            animation-delay: 300ms * $i;
+                        }
+                    }
 
                     display: flex;
                     align-items: center;

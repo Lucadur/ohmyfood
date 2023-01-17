@@ -73,23 +73,6 @@ body {
     opacity: 1;
   }
 }
-.menucontent__card:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.menucontent__card:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-.menucontent__card:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-.menucontent__card:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 .footer {
   background-color: #353535;
   color: white;
@@ -205,23 +188,6 @@ body {
     opacity: 1;
   }
 }
-.menucontent__card:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.menucontent__card:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-.menucontent__card:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-.menucontent__card:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 .loader {
   position: fixed;
   background-color: white;
@@ -542,23 +508,6 @@ body {
     opacity: 1;
   }
 }
-.menucontent__card:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.menucontent__card:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-.menucontent__card:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-.menucontent__card:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 .footer {
   background-color: #353535;
   color: white;
@@ -674,23 +623,6 @@ body {
     opacity: 1;
   }
 }
-.menucontent__card:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.menucontent__card:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-.menucontent__card:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-.menucontent__card:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 .loader {
   position: fixed;
   background-color: white;
@@ -848,6 +780,22 @@ body {
   -webkit-animation: appear 2s;
           animation: appear 2s;
 }
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card:nth-child(1) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card:nth-child(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card:nth-child(3) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+.containermenu .menubloc .menucontent .menucontent__cards .menucontent__card:nth-child(4) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
 .containermenu .menubloc .menucontent .menucontent__cards .menucontent__card .menucontent__card__description {
   padding-left: 10px;
   overflow: hidden;
@@ -936,23 +884,6 @@ body {
     opacity: 1;
   }
 }
-.menucontent__card:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.menucontent__card:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-.menucontent__card:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-.menucontent__card:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 .footer {
   background-color: #353535;
   color: white;
@@ -1068,23 +999,6 @@ body {
     opacity: 1;
   }
 }
-.menucontent__card:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.menucontent__card:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-.menucontent__card:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-.menucontent__card:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 .loader {
   position: fixed;
   background-color: white;
